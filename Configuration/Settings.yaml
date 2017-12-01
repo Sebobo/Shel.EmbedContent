@@ -1,0 +1,19 @@
+Shel:
+  EmbedContent:
+    log:
+      requestLogger:
+        logger: Shel\EmbedContent\DataSync\Log\RequestLogger
+        backend: Neos\Flow\Log\Backend\FileBackend
+        backendOptions:
+           logFileURL: '%FLOW_PATH_DATA%Logs/ShelEmbedContentRequests.log'
+           createParentDirectories: TRUE
+           severityThreshold: '%LOG_INFO%'
+           maximumLogFileSize: 10485760
+           logFilesToKeep: 1
+           logMessageOrigin: FALSE
+    requestService:
+      defaultBaseUrl: '' # This url will be prefixed to requests which have relative paths
+      timeout: 10
+      username: ''
+      password: ''
+      parameters: []

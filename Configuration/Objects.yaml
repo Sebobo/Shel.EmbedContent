@@ -1,0 +1,23 @@
+Shel\EmbedContent\Log\RequestLoggerInterface:
+  scope: singleton
+  factoryObjectName: Neos\Flow\Log\LoggerFactory
+  factoryMethodName: create
+  arguments:
+    1:
+      value: 'Shel_EmbedContent_Logger'
+    2:
+      setting: Shel.EmbedContent.log.requestLogger.logger
+    3:
+      setting: Shel.EmbedContent.log.requestLogger.backend
+    4:
+      setting: Shel.EmbedContent.log.requestLogger.backendOptions
+
+Shel\EmbedContent\Service\RequestService:
+  properties:
+    dataCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Shel_EmbedContent_ContentCache

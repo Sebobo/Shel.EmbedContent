@@ -1,0 +1,6 @@
+'Shel.EmbedContent:EmbeddableContentMixin':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Shel.EmbedContent:EmbeddableContentMixin': true
+  ui:
+    label: i18n

@@ -1,0 +1,19 @@
+{
+    "description": "Neos CMS plugin for embedding content from other websites",
+    "type": "neos-plugin",
+    "name": "shel/embedcontent",
+    "require": {
+        "neos/neos": "~3.0",
+        "querypath/QueryPath": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shel\\EmbedContent\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Shel.EmbedContent"
+        }
+    }
+}

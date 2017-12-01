@@ -1,0 +1,4 @@
+Shel_EmbedContent_ContentCache:
+  backend: Neos\Flow\Cache\Backend\FileBackend
+  backendOptions:
+    defaultLifetime: 3600
